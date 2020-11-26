@@ -23,31 +23,33 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"luffy-king-r.github.io","root":"/","images":"/images","scheme":"Muse","version":"8.0.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
   </script>
-<meta name="description" content="This is for recoding my post-graduate life.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="One Piece">
-<meta property="og:url" content="https://luffy-king-r.github.io/index.html">
+<meta name="description" content="hexo+github搭建博客的过程记录，仅以自己为例。 平台：windows 10 软件安装Node.js安装, 一路next（我也不懂那些选项做啥的），它默认添加环境变量到PATH。装完之后就可以使用npm命令了。（npm命令类似于pip命令吧）  hexo安装 全局安装hexo：npm install hexo -g 进入到博客存放目录：cd C:\Users\&lt;username&amp;gt">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo+github博客搭建">
+<meta property="og:url" content="https://luffy-king-r.github.io/2020/11/26/hexo-github%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/index.html">
 <meta property="og:site_name" content="One Piece">
-<meta property="og:description" content="This is for recoding my post-graduate life.">
+<meta property="og:description" content="hexo+github搭建博客的过程记录，仅以自己为例。 平台：windows 10 软件安装Node.js安装, 一路next（我也不懂那些选项做啥的），它默认添加环境变量到PATH。装完之后就可以使用npm命令了。（npm命令类似于pip命令吧）  hexo安装 全局安装hexo：npm install hexo -g 进入到博客存放目录：cd C:\Users\&lt;username&amp;gt">
 <meta property="og:locale">
+<meta property="article:published_time" content="2020-11-26T09:14:35.000Z">
+<meta property="article:modified_time" content="2020-11-26T13:35:55.171Z">
 <meta property="article:author" content="RenLei">
-<meta property="article:tag" content="deep learning; urban computing; spatio-temporal series">
+<meta property="article:tag" content="hexo; github">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://luffy-king-r.github.io/">
+<link rel="canonical" href="https://luffy-king-r.github.io/2020/11/26/hexo-github%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
 
 
 <script class="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-Hans'
   };
 </script>
-<title>One Piece</title>
+<title>hexo+github博客搭建 | One Piece</title>
   
 
 
@@ -132,7 +134,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -145,6 +147,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <section class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85"><span class="nav-number">1.</span> <span class="nav-text">软件安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo%E5%AE%89%E8%A3%85"><span class="nav-number">2.</span> <span class="nav-text">hexo安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#github%E8%AE%BE%E7%BD%AE"><span class="nav-number">3.</span> <span class="nav-text">github设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#config-yml%E9%85%8D%E7%BD%AE"><span class="nav-number">4.</span> <span class="nav-text">_config.yml配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9B%B4%E6%8D%A2next%E4%B8%BB%E9%A2%98"><span class="nav-number">5.</span> <span class="nav-text">更换next主题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2"><span class="nav-number">6.</span> <span class="nav-text">博客部署</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B3%A8%EF%BC%9A"><span class="nav-number">7.</span> <span class="nav-text">注：</span></a></li></ol></div>
         </section>
         <!--/noindex-->
 
@@ -197,9 +200,10 @@
 </noscript>
 
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
@@ -219,9 +223,9 @@
       <meta itemprop="name" content="One Piece">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2020/11/26/hexo-github%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="post-title-link" itemprop="url">hexo+github博客搭建</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          hexo+github博客搭建
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -245,7 +249,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>hexo+github搭建博客的过程记录，仅以自己为例。</p>
+        <p>hexo+github搭建博客的过程记录，仅以自己为例。</p>
 <p>平台：windows 10</p>
 <h2 id="软件安装"><a href="#软件安装" class="headerlink" title="软件安装"></a>软件安装</h2><p><a target="_blank" rel="noopener" href="https://nodejs.org/en/download/">Node.js</a>安装, 一路next（我也不懂那些选项做啥的），它默认添加环境变量到PATH。装完之后就可以使用npm命令了。（npm命令类似于pip命令吧）</p>
 <hr>
@@ -316,7 +320,6 @@
 </li>
 </ul>
 
-      
     </div>
 
     
@@ -324,76 +327,25 @@
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+          <div class="post-tags">
+              <a href="/tags/hexo-github/" rel="tag"># hexo; github</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2020/11/26/%E5%8D%9A%E5%AE%A2%E5%88%9D%E8%A1%B7/" rel="prev" title="博客初衷">
+                  <i class="fa fa-chevron-left"></i> 博客初衷
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
     </footer>
   </article>
 </div>
 
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-Hans">
-    <link itemprop="mainEntityOfPage" href="https://luffy-king-r.github.io/2020/11/26/%E5%8D%9A%E5%AE%A2%E5%88%9D%E8%A1%B7/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="RenLei">
-      <meta itemprop="description" content="This is for recoding my post-graduate life.">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="One Piece">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2020/11/26/%E5%8D%9A%E5%AE%A2%E5%88%9D%E8%A1%B7/" class="post-title-link" itemprop="url">博客初衷</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2020-11-26 17:01:15 / 修改时间：17:12:21" itemprop="dateCreated datePublished" datetime="2020-11-26T17:01:15+08:00">2020-11-26</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>研究生入学已过去两个半月，始终都没进入学习状态。其实自从考完研后，一直都将学习抛到了一边，再加之疫情影响，将近一年都再摸鱼。故以此博客来监督自己接下来的学习，希望三年后能够有所积累和收获。</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
 
 
 
