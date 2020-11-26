@@ -278,7 +278,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2020-11-26 17:14:35 / 修改时间：23:05:06" itemprop="dateCreated datePublished" datetime="2020-11-26T17:14:35+08:00">2020-11-26</time>
+      <time title="创建时间：2020-11-26 17:14:35 / 修改时间：23:11:12" itemprop="dateCreated datePublished" datetime="2020-11-26T17:14:35+08:00">2020-11-26</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -293,7 +293,6 @@
   
 </div>
 
-            <div class="post-description">博客搭建过程</div>
         </div>
       </header>
 
@@ -301,74 +300,15 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>hexo+github搭建博客的过程记录，仅以自己为例。</p>
-<p>平台：windows 10</p>
-<h2 id="软件安装"><a href="#软件安装" class="headerlink" title="软件安装"></a>软件安装</h2><p><a target="_blank" rel="noopener" href="https://nodejs.org/en/download/">Node.js</a>安装, 一路next（我也不懂那些选项做啥的），它默认添加环境变量到PATH。装完之后就可以使用npm命令了。（npm命令类似于pip命令吧）</p>
-<hr>
-<h2 id="hexo安装"><a href="#hexo安装" class="headerlink" title="hexo安装"></a><strong>hexo</strong>安装</h2><ul>
-<li>全局安装hexo：<code>npm install hexo -g</code></li>
-<li>进入到博客存放目录：<code>cd C:\Users\&lt;username&gt;\&lt;blog-dir&gt;</code></li>
-<li>初始化该文件夹：<code>hexo init</code></li>
-<li>安装部署博客所需扩展：<code>npm install hexo-deployer-git --save</code></li>
-</ul>
-<p>至此为止，<strong>hexo</strong>相关已安装完毕</p>
-<hr>
-<h2 id="github设置"><a href="#github设置" class="headerlink" title="github设置"></a><strong>github</strong>设置</h2><ul>
-<li>创建repository，repo名为&lt;username&gt;.github.io，此处的<strong>username</strong>就是github账号的用户名</li>
-<li>配置ssh<ul>
-<li><code>git config --global user.name &quot;username&quot;</code></li>
-<li><code>git config --globale user.email &quot;email@example.com&quot;</code></li>
-</ul>
-</li>
-<li>进到 <strong>.ssh</strong> 目录：<code>cd C:\Users\&lt;username&gt;\.ssh</code></li>
-<li>输入<code>ssh-keygen -t rsa -C &quot;email@example.com&quot;</code> 生成密钥，此处应有三个文件，实际windows上只生成了两个：<strong>id_rsa</strong>和<strong>id_rsa.pub</strong></li>
-<li>输入<code>ssh-keyscan -t rsa github.com &gt;&gt; C:\Users\&lt;username&gt;\.ssh\known_hosts</code>生成<strong>known_hosts</strong>文件</li>
-<li>在<strong>github</strong>中<strong>settings</strong>添加<strong>ssh</strong></li>
-<li>输入<code>ssh -T git@github.com</code>测试添加ssh是否成功</li>
-</ul>
-<hr>
-<h2 id="config-yml配置"><a href="#config-yml配置" class="headerlink" title="_config.yml配置"></a><strong>_config.yml</strong>配置</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repo: git@github.com:&lt;username&gt;&#x2F;&lt;username&gt;.github.io</span><br><span class="line">    brach: master</span><br></pre></td></tr></table></figure>
-
-<p><strong>repo</strong>后是repository&gt;code下的ssh链接</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># URL</span><br><span class="line">url: https:&#x2F;&#x2F;&lt;username&gt;.github.io</span><br><span class="line">root: &#x2F;</span><br></pre></td></tr></table></figure>
-<p>此处因为主题加载css样式需要</p>
-<hr>
-<h2 id="更换next主题"><a href="#更换next主题" class="headerlink" title="更换next主题"></a>更换<strong>next</strong>主题</h2><p>按照<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next">https://github.com/next-theme/hexo-theme-next</a> 的 README.md</p>
-<ul>
-<li><p>在博客目录下：<code>git clone https://github.com/next-theme/hexo-theme-next themes/next</code></p>
-</li>
-<li><p>在<strong>_config.yml</strong>中更改主题：<code>theme: next</code></p>
-</li>
-<li><p>到这步似乎第一次打开主页出现了下述问题</p>
-<p> <code>&#123;% extends ‘_layout.swig‘ %&#125; &#123;% import ‘_macro/post.swig‘ as post_template %&#125;</code></p>
-</li>
-<li><p>之后重新装了一遍，又按照README.md输入：</p>
-<ul>
-<li><p><code>cd themes/next</code></p>
-</li>
-<li><p><code>git tag -l</code></p>
-</li>
-<li><p><code>git checkout tags/v8.0.0</code></p>
-</li>
-<li><p><code>git checkout master</code></p>
-<p>然后它就好了，我也不清楚为啥，反正能用就行了！！！</p>
-</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="博客部署"><a href="#博客部署" class="headerlink" title="博客部署"></a>博客部署</h2><ul>
-<li>清除缓存： <code>hexo clean</code></li>
-<li>静态文件生成：<code>hexo g</code></li>
-<li>博客部署：<code>hexo d</code></li>
-</ul>
-<hr>
-<h3 id="注"><a href="#注" class="headerlink" title="注"></a>注</h3><pre><code>要先在博客目录下`hexo init`初始化，此后他会生成 **_config.yml** 配置文件。我一开始先建立了仓库，然后在**settings**中选择了主题（它也会生成一个 **_config.yml** 文件），该文件不同于前者。</code></pre>
-<h3 id="参考博客"><a href="#参考博客" class="headerlink" title="参考博客"></a>参考博客</h3><ul>
-<li><a target="_blank" rel="noopener" href="https://enfangzhong.github.io/2018/08/26/Hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2_hexo+github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%8F%8A%E7%BE%8E%E5%8C%96%E6%9B%B4%E6%96%B0/">https://enfangzhong.github.io/2018/08/26/Hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2_hexo+github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%8F%8A%E7%BE%8E%E5%8C%96%E6%9B%B4%E6%96%B0/</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/30813541aef2">https://www.jianshu.com/p/30813541aef2</a></li>
-</ul>
-
+          <p>博客搭建过程</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/11/26/hexo-github%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -419,7 +359,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2020-11-26 17:01:15 / 修改时间：23:05:27" itemprop="dateCreated datePublished" datetime="2020-11-26T17:01:15+08:00">2020-11-26</time>
+      <time title="创建时间：2020-11-26 17:01:15 / 修改时间：23:11:20" itemprop="dateCreated datePublished" datetime="2020-11-26T17:01:15+08:00">2020-11-26</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -434,7 +374,6 @@
   
 </div>
 
-            <div class="post-description">监督自己</div>
         </div>
       </header>
 
@@ -442,8 +381,15 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>研究生入学已过去两个半月，始终都没进入学习状态。其实自从考完研后，一直都将学习抛到了一边，再加之疫情影响，将近一年都再摸鱼。故以此博客来监督自己接下来的学习，希望三年后能够有所积累和收获。</p>
-
+          <p>监督自己</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/11/26/%E5%8D%9A%E5%AE%A2%E5%88%9D%E8%A1%B7/">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
