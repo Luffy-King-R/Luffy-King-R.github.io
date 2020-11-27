@@ -278,7 +278,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2020-11-27 13:56:31 / 修改时间：21:58:38" itemprop="dateCreated datePublished" datetime="2020-11-27T13:56:31+08:00">2020-11-27</time>
+      <time title="创建时间：2020-11-27 13:56:31 / 修改时间：22:26:49" itemprop="dateCreated datePublished" datetime="2020-11-27T13:56:31+08:00">2020-11-27</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -300,57 +300,59 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h2 id="KDD’20会议城市计算相关文献整理"><a href="#KDD’20会议城市计算相关文献整理" class="headerlink" title="KDD’20会议城市计算相关文献整理"></a>KDD’20会议城市计算相关文献整理</h2><ul>
+          <a id="more"></a>
+
+<h2 id="KDD’20会议城市计算相关文献整理"><a href="#KDD’20会议城市计算相关文献整理" class="headerlink" title="KDD’20会议城市计算相关文献整理"></a>KDD’20会议城市计算相关文献整理</h2><ul>
 <li><p><a target="_blank" rel="noopener" href="https://doi.org/10.1145/3394486.3403046">Preserving Dynamic Attention for Long-Term Spatial-Temporal Prediction</a></p>
-<p>  <strong>ABSTRACT</strong></p>
+<p><strong>ABSTRACT</strong></p>
 <blockquote>
-<p>Effective long-term predictions have been increasingly demanded in urban-wise data mining systems. Many practical applications, such as accident prevention and resource pre-allocation, require an extended period for preparation. However, challenges come as long-term prediction is highly error-sensitive, which becomes more critical when predicting urban-wise phenomena with complicated and dynamic spatial-temporal correlation. Specifically, since the amount of valuable correlation is limited, enormous irrelevant features introduce noises that trigger increased prediction errors. Besides, after each time step, the errors can traverse through the correlations and reach the spatial-temporal positions in every future prediction, leading to significant error propagation. To address these issues, we propose a Dynamic Switch-Attention Network (DSAN) with a novel Multi-Space Attention (MSA) mechanism that measures the correlations between inputs and outputs explicitly. To filter out irrelevant noises and alleviate the error propagation, DSAN dynamically extracts valuable information by applying self-attention over the noisy input and bridges each output directly to the purified inputs via implementing a switch-attention mechanism. Through extensive experiments on two spatial-temporal prediction tasks, we demonstrate the superior advantage of DSAN in both short-term and long-term predictions. The source code can be obtained from <a target="_blank" rel="noopener" href="https://github.com/hxstarklin/DSAN">https://github.com/hxstarklin/DSAN</a>. </p>
+<p>Effective long-term predictions have been increasingly demanded in urban-wise data mining systems. Many practical applications, such as accident prevention and resource pre-allocation, require an extended period for preparation. However, challenges come as long-term prediction is highly error-sensitive, which becomes more critical when predicting urban-wise phenomena with complicated and dynamic spatial-temporal correlation. Specifically, since the amount of valuable correlation is limited, enormous irrelevant features introduce noises that trigger increased prediction errors. Besides, after each time step, the errors can traverse through the correlations and reach the spatial-temporal positions in every future prediction, leading to significant error propagation. To address these issues, we propose a Dynamic Switch-Attention Network (DSAN) with a novel Multi-Space Attention (MSA) mechanism that measures the correlations between inputs and outputs explicitly. To filter out irrelevant noises and alleviate the error propagation, DSAN dynamically extracts valuable information by applying self-attention over the noisy input and bridges each output directly to the purified inputs via implementing a switch-attention mechanism. Through extensive experiments on two spatial-temporal prediction tasks, we demonstrate the superior advantage of DSAN in both short-term and long-term predictions. The source code can be obtained from <a target="_blank" rel="noopener" href="https://github.com/hxstarklin/DSAN">https://github.com/hxstarklin/DSAN</a>.</p>
 </blockquote>
 </li>
 <li><p><a target="_blank" rel="noopener" href="https://doi.org/10.1145/3394486.3403320">ConSTGAT: Contextual Spatial-Temporal Graph Attention Network for Travel Time Estimation at Baidu Maps</a></p>
-<p>  <strong>ABSTRACT</strong></p>
+<p><strong>ABSTRACT</strong></p>
 <blockquote>
 <p>The task of travel time estimation (TTE), which estimates the travel time for a given route and departure time, plays an important role in intelligent transportation systems such as navigation, route planning, and ride-hailing services. This task is challenging because of many essential aspects, such as traffic prediction and contextual information. First, the accuracy of traffic prediction is strongly correlated with the traffic speed of the road segments in a route. Existing work mainly adopts spatial-temporal graph neural networks to improve the accuracy of traffic prediction, where spatial and temporal information is used separately. However, one drawback is that the spatial and temporal correlations are not fully exploited to obtain better accuracy. Second, contextual information of a route, i.e., the connections of adjacent road segments in the route, is an essential factor that impacts the driving speed. Previous work mainly uses sequential encoding models to address this issue. However, it is difficult to scale up sequential models to large-scale real-world services. In this paper, we propose an end-to-end neural framework named ConSTGAT, which integrates traffic prediction and contextual information to address these two problems. Specifically, we first propose a spatial-temporal graph neural network that adopts a novel graph attention mechanism, which is designed to fully exploit the joint relations of spatial and temporal information. Then, in order to efficiently take advantage of the contextual information, we design a computationally efficient model that applies convolutions over local windows to capture a route’s contextual information and further employs multi-task learning to improve the performance. In this way, the travel time of each road segment can be computed in parallel and in advance. Extensive experiments conducted on large-scale real-world datasets demonstrate the superiority of ConSTGAT. In addition, ConSTGAT has already been deployed in production at Baidu Maps, and it successfully keeps serving tens of billions of requests every day. This confirms that ConSTGAT is a practical and robust solution for large-scale real-world TTE services.</p>
 </blockquote>
 </li>
 <li><p><a target="_blank" rel="noopener" href="https://doi.org/10.1145/3394486.3403122">AutoST: Efficient Neural Architecture Search for Spatio-Temporal Prediction</a></p>
-<p>  <strong>ABSTRACT</strong></p>
+<p><strong>ABSTRACT</strong></p>
 <blockquote>
 <p>Spatio-temporal (ST) prediction (e.g. crowd flow prediction) is of great importance in a wide range of smart city applications from urban planning, intelligent transportation and public safety. Recently, many deep neural network models have been proposed to make accurate prediction. However, manually designing neural networks requires amount of expert efforts and ST domain knowledge. How to automatically construct a general neural network for diverse spatio-temporal predication tasks in cities? In this paper, we study Neural Architecture Search (NAS) for spatio-temporal prediction and propose an efficient spatio-temporal neural architecture search method, entitled AutoST. To our best knowledge, the search space is an important human prior to the success of NAS in different applications while current NAS models concentrated on optimizing search strategy in the fixed search space. Thus, we design a novel search space tailored for ST-domain which consists of two categories of components: (i) optional convolution operations at each layer to automatically extract multi-range spatio-temporal dependencies; (ii) learnable skip connections among layers to dynamically fuse low- and high-level ST-features. We conduct extensive experiments on four real-word spatio-temporal prediction tasks, including taxi flow and crowd flow, showing that the learned network architectures can significantly improve the performance of representative ST neural network models. Furthermore, our proposed efficient NAS approach searches 8-10x faster than state-of-the-art NAS approaches, demonstrating the efficiency and effectiveness of AutoST.</p>
 </blockquote>
 </li>
 <li><p><a target="_blank" rel="noopener" href="https://doi.org/10.1145/3394486.3403122">AutoST: Efficient Neural Architecture Search for Spatio-Temporal Prediction</a></p>
-<p>  <strong>ABSTRACT</strong></p>
+<p><strong>ABSTRACT</strong></p>
 <blockquote>
 <p>Spatio-temporal (ST) prediction (e.g. crowd flow prediction) is of great importance in a wide range of smart city applications from urban planning, intelligent transportation and public safety. Recently, many deep neural network models have been proposed to make accurate prediction. However, manually designing neural networks requires amount of expert efforts and ST domain knowledge. How to automatically construct a general neural network for diverse spatio-temporal predication tasks in cities? In this paper, we study Neural Architecture Search (NAS) for spatio-temporal prediction and propose an efficient spatio-temporal neural architecture search method, entitled AutoST. To our best knowledge, the search space is an important human prior to the success of NAS in different applications while current NAS models concentrated on optimizing search strategy in the fixed search space. Thus, we design a novel search space tailored for ST-domain which consists of two categories of components: (i) optional convolution operations at each layer to automatically extract multi-range spatio-temporal dependencies; (ii) learnable skip connections among layers to dynamically fuse low- and high-level ST-features. We conduct extensive experiments on four real-word spatio-temporal prediction tasks, including taxi flow and crowd flow, showing that the learned network architectures can significantly improve the performance of representative ST neural network models. Furthermore, our proposed efficient NAS approach searches 8-10x faster than state-of-the-art NAS approaches, demonstrating the efficiency and effectiveness of AutoST.</p>
 </blockquote>
 </li>
 <li><p><a target="_blank" rel="noopener" href="https://doi.org/10.1145/3394486.3403183">ST-SiameseNet: Spatio-Temporal Siamese Networks for Human Mobility Signature Identification</a></p>
-<p>  <strong>ABSTRACT</strong></p>
+<p><strong>ABSTRACT</strong></p>
 <blockquote>
 <p>Given the historical movement trajectories of a set of individual human agents (e.g., pedestrians, taxi drivers) and a set of new trajectories claimed to be generated by a specific agent, the Human Mobility Signature Identification (HuMID) problem aims at validating if the incoming trajectories were indeed generated by the claimed agent. This problem is important in many real-world applications such as driver verification in ride-sharing services, risk analysis for auto insurance companies, and criminal identification. Prior work on identifying human mobility behaviors requires additional data from other sources besides the trajectories, e.g., sensor readings in the vehicle for driving behavior identification. However, these data might not be universally available and is costly to obtain. To deal with this challenge, in this work, we make the first attempt to match identities of human agents only from the observed location trajectory data by proposing a novel and efficient framework named Spatio-temporal Siamese Networks (ST-SiameseNet). For each human agent, we extract a set of profile and online features from his/her trajectories. We train ST-SiameseNet to predict the mobility signature similarity between each pair of agents, where each agent is represented by his/her trajectories and the extracted features. Experimental results on a real-world taxi trajectory dataset show that our proposed ST-SiamesNet can achieve an $F_1$ score of $0.8508$, which significantly outperforms the state-of-the-art techniques.</p>
 </blockquote>
 </li>
 <li><p><a target="_blank" rel="noopener" href="https://doi.org/10.1145/3394486.3403358">Hybrid Spatio-Temporal Graph Convolutional Network: Improving Traffic Prediction with Navigation Data</a></p>
-<p>  <strong>ABSTRACT</strong></p>
+<p><strong>ABSTRACT</strong></p>
 <blockquote>
 <p>Traffic forecasting has recently attracted increasing interest due to the popularity of online navigation services, ridesharing and smart city projects. Owing to the non-stationary nature of road traffic, forecasting accuracy is fundamentally limited by the lack of contextual information. To address this issue, we propose the Hybrid Spatio-Temporal Graph Convolutional Network (H-STGCN), which is able to “deduce” future travel time by exploiting the data of upcoming traffic volume. Specifically, we propose an algorithm to acquire the upcoming traffic volume from an online navigation engine. Taking advantage of the piecewise-linear flow-density relationship, a novel transformer structure converts the upcoming volume into its equivalent in travel time. We combine this signal with the commonly-utilized travel-time signal, and then apply graph convolution to capture the spatial dependency. Particularly, we construct a compound adjacency matrix which reflects the innate traffic proximity. We conduct extensive experiments on real-world datasets. The results show that H-STGCN remarkably outperforms state-of-the-art methods in various metrics, especially for the prediction of non-recurring congestion.</p>
 </blockquote>
 </li>
 <li><p><a target="_blank" rel="noopener" href="https://doi.org/10.1145/3394486.3403373">Dynamic Heterogeneous Graph Neural Network for Real-time Event Prediction</a></p>
-<p>  <strong>ABSTRACT</strong></p>
+<p><strong>ABSTRACT</strong></p>
 <blockquote>
 <p>Customer response prediction is critical in many industrial applications such as online advertising and recommendations. In particular, the challenge is greater for ride-hailing platforms such as Uber and DiDi, because the response prediction models need to consider historical and real-time event information in the physical environment, such as surrounding traffic and supply and demand conditions. In this paper, we propose to use dynamically constructed heterogeneous graph for each ongoing event to encode the attributes of the event and its surroundings. In addition, we propose a multi-layer graph neural network model to learn the impact of historical actions and the surrounding environment on the current events, and generate an effective event representation to improve the accuracy of the response model. We investigate this framework to two practical applications on the DiDi platform. Offline and online experiments show that the framework can significantly improve prediction performance. The framework has been deployed in the online production environment and serves tens of millions of event prediction requests every day.</p>
 </blockquote>
 </li>
 <li><p><a target="_blank" rel="noopener" href="https://doi.org/10.1145/3394486.3403332">Doing in One Go: Delivery Time Inference Based on Couriers’ Trajectories</a></p>
-<p>  <strong>ABSTRACT</strong></p>
+<p><strong>ABSTRACT</strong></p>
 <blockquote>
 <p>The rapid development of e-commerce requires efficient and reliable logistics services. Nowadays, couriers are still the main solution to address the “last mile” problem in logistics. They are usually required to record the accurate delivery time of each parcel manually, which provides vital information for applications like delivery insurances, delivery performance evaluations, and customer available time discovery. Couriers’ trajectories generated by their PDAs provide a chance to infer the delivery time automatically to ease the burdens on the couriers. However, directly using the nearest stay point to infer the delivery time is under satisfactory due to two challenges: 1) inaccurate delivery locations, and 2) various stay scenarios. To this end, we propose Delivery Time Inference (DTInf), to automatically infer the delivery time of waybills based on couriers’ trajectories. Our solution is composed of three steps: 1) Data Pre-processing, which detects stay points from trajectories, and separates stay points and waybills by delivery trips, 2) Delivery Location Correction, which infers true delivery locations of waybills by mining historical deliveries, and 3) Delivery Event-based Matching, which selects the best-matched stay point for waybills in the same delivery location to infer the delivery time. Extensive experiments and case studies based on large scale real-world waybill and trajectory data from JD Logistics confirm the effectiveness of our approach. Finally, we introduce a system based on DTInf, which is deployed and used internally in JD Logistics.</p>
 </blockquote>
 </li>
 <li><p><a target="_blank" rel="noopener" href="https://doi.org/10.1145/3394486.3403281">Polestar: An Intelligent, Efficient and National-Wide Public Transportation Routing Engine</a></p>
-<p>  <strong>ABSTRACT</strong></p>
+<p><strong>ABSTRACT</strong></p>
 <blockquote>
 <p>Public transportation plays a critical role in people’s daily life. It has been proven that public transportation is more environmentally sustainable, efficient, and economical than any other forms of travel. However, due to the increasing expansion of transportation networks and more complex travel situations, people are having difficulties in efficiently finding the most preferred route from one place to another through public transportation systems. To this end, in this paper, we present Polestar, a data-driven engine for intelligent and efficient public transportation routing.Specifically, we first propose a novel Public Transportation Graph (PTG) to model public transportation system in terms of various travel costs, such as time or distance. Then, we introduce a general route search algorithm coupled with an efficient station binding method for efficient route candidate generation. After that, we propose a two-pass route candidate ranking module to capture user preferences under dynamic travel situations. Finally, experiments on two real-world data sets demonstrate the advantages of Polestar in terms of both efficiency and effectivenes Indeed, in early 2019, Polestar has been deployed on Baidu Maps, one of the world’s largest map services. To date, Polestar is servicing over 330 cities, answers over a hundred millions of queries each day, and achieves substantial improvement of user click ratio.</p>
 </blockquote>
@@ -413,7 +415,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-11-27 21:58:28" itemprop="dateModified" datetime="2020-11-27T21:58:28+08:00">2020-11-27</time>
+        <time title="修改时间：2020-11-27 22:13:36" itemprop="dateModified" datetime="2020-11-27T22:13:36+08:00">2020-11-27</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -435,7 +437,9 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>hexo+github搭建博客的过程记录，仅以自己为例。<br>平台：windows 10</p>
+          <a id="more"></a>
+
+<p>hexo+github搭建博客的过程记录，仅以自己为例。<br>平台：windows 10</p>
 <h2 id="软件安装"><a href="#软件安装" class="headerlink" title="软件安装"></a>软件安装</h2><p><a target="_blank" rel="noopener" href="https://nodejs.org/en/download/">Node.js</a>安装, 一路next（我也不懂那些选项做啥的），它默认添加环境变量到PATH。装完之后就可以使用npm命令了。（npm命令类似于pip命令吧）</p>
 <hr>
 <h2 id="hexo安装"><a href="#hexo安装" class="headerlink" title="hexo安装"></a><strong>hexo</strong>安装</h2><ul>
@@ -460,10 +464,11 @@
 <li>输入<code>ssh -T git@github.com</code>测试添加ssh是否成功</li>
 </ul>
 <hr>
-<h2 id="config-yml配置"><a href="#config-yml配置" class="headerlink" title="_config.yml配置"></a><strong>_config.yml</strong>配置</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repo: git@github.com:&lt;username&gt;&#x2F;&lt;username&gt;.github.io</span><br><span class="line">    brach: master</span><br></pre></td></tr></table></figure>
+<h2 id="config-yml配置"><a href="#config-yml配置" class="headerlink" title="_config.yml配置"></a><strong>_config.yml</strong>配置</h2><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repo: git@github.com:&lt;username&gt;/&lt;username&gt;.github.io</span><br><span class="line">    brach: master</span><br></pre></td></tr></table></figure>
 
 <p><strong>repo</strong>后是repository&gt;code下的ssh链接</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># URL</span><br><span class="line">url: https:&#x2F;&#x2F;&lt;username&gt;.github.io</span><br><span class="line">root: &#x2F;</span><br></pre></td></tr></table></figure>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># URL</span><br><span class="line">url: https://&lt;username&gt;.github.io</span><br><span class="line">root: /</span><br></pre></td></tr></table></figure>
+
 <p>此处因为主题加载css样式需要</p>
 <hr>
 <h2 id="更换next主题"><a href="#更换next主题" class="headerlink" title="更换next主题"></a>更换<strong>next</strong>主题</h2><p>按照<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next">https://github.com/next-theme/hexo-theme-next</a> 的 README.md</p>
@@ -477,16 +482,12 @@
 </li>
 <li><p>之后重新装了一遍，又按照README.md输入：</p>
 <ul>
-<li><p><code>cd themes/next</code></p>
-</li>
-<li><p><code>git tag -l</code></p>
-</li>
-<li><p><code>git checkout tags/v8.0.0</code></p>
-</li>
-<li><p><code>git checkout master</code></p>
-<p>然后它就好了，我也不清楚为啥，反正能用就行了！！！</p>
-</li>
+<li><code>cd themes/next</code></li>
+<li><code>git tag -l</code></li>
+<li><code>git checkout tags/v8.0.0</code></li>
+<li><code>git checkout master</code></li>
 </ul>
+<p>然后它就好了，我也不清楚为啥，反正能用就行了！！！</p>
 </li>
 </ul>
 <hr>
@@ -496,7 +497,7 @@
 <li>博客部署：<code>hexo d</code></li>
 </ul>
 <hr>
-<h3 id="注"><a href="#注" class="headerlink" title="注"></a>注</h3><pre><code>要先在博客目录下`hexo init`初始化，此后他会生成 **_config.yml** 配置文件。我一开始先建立了仓库，然后在**settings**中选择了主题（它也会生成一个 **_config.yml** 文件），该文件不同于前者。</code></pre>
+<h3 id="注"><a href="#注" class="headerlink" title="注"></a>注</h3><p>要先在博客目录下<code>hexo init</code>初始化，此后他会生成 <strong>_config.yml</strong> 配置文件。我一开始先建立了仓库，然后在<strong>settings</strong>中选择了主题（它也会生成一个 <strong>_config.yml</strong> 文件），该文件不同于前者。</p>
 <h3 id="参考博客"><a href="#参考博客" class="headerlink" title="参考博客"></a>参考博客</h3><ul>
 <li><a target="_blank" rel="noopener" href="https://enfangzhong.github.io/2018/08/26/Hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2_hexo+github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%8F%8A%E7%BE%8E%E5%8C%96%E6%9B%B4%E6%96%B0/">https://enfangzhong.github.io/2018/08/26/Hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2_hexo+github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%8F%8A%E7%BE%8E%E5%8C%96%E6%9B%B4%E6%96%B0/</a></li>
 <li><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/30813541aef2">https://www.jianshu.com/p/30813541aef2</a></li>
