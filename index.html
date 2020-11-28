@@ -195,7 +195,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -208,7 +208,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -244,6 +244,125 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://luffy-king-r.github.io/2020/11/28/AAAI-20-urban-computing/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="RenLei">
+      <meta itemprop="description" content="This is for recoding my post-graduate life.">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="One Piece">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2020/11/28/AAAI-20-urban-computing/" class="post-title-link" itemprop="url">AAAI-20: urban-computing</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2020-11-28 22:34:43 / 修改时间：22:55:59" itemprop="dateCreated datePublished" datetime="2020-11-28T22:34:43+08:00">2020-11-28</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%96%87%E7%8C%AE%E6%94%B6%E9%9B%86/" itemprop="url" rel="index"><span itemprop="name">文献收集</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <a id="more"></a>
+
+<h2 id="AAAI-20会议城市计算相关文献整理"><a href="#AAAI-20会议城市计算相关文献整理" class="headerlink" title="AAAI-20会议城市计算相关文献整理"></a>AAAI-20会议城市计算相关文献整理</h2><ul>
+<li><p><a target="_blank" rel="noopener" href="https://doi.org/10.1609/aaai.v34i04.5819">Potential Passenger Flow Prediction: A Novel Study for Urban Transportation Development</a></p>
+<p><strong>ABSTRACT</strong></p>
+<blockquote>
+<p>Recently, practical applications for passenger flow prediction have brought many benefits to urban transportation development. With the development of urbanization, a real-world demand from transportation managers is to construct a new metro station in one city area that never planned before. Authorities are interested in the picture of the future volume of commuters before constructing a new station, and estimate how would it affect other areas. In this paper, this specific problem is termed as potential passenger flow (PPF) prediction, which is a novel and important study connected with urban computing and intelligent transportation systems. For example, an accurate PPF predictor can provide invaluable knowledge to designers, such as the advice of station scales and influences on other areas, etc. To address this problem, we propose a multi-view localized correlation learning method. The core idea of our strategy is to learn the passenger flow correlations between the target areas and their localized areas with adaptive-weight. To improve the prediction accuracy, other domain knowledge is involved via a multi-view learning process. We conduct intensive experiments to evaluate the effectiveness of our method with real-world official transportation datasets. The results demonstrate that our method can achieve excellent performance compared with other available baselines. Besides, our method can provide an effective solution to the cold-start problem in the recommender system as well, which proved by its outperformed experimental results.</p>
+</blockquote>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://doi.org/10.1609/aaai.v34i04.5915">Tensor Completion for Weakly-Dependent Data on Graph for Metro Passenger Flow Prediction</a></p>
+<p><strong>ABSTRACT</strong></p>
+<blockquote>
+<p>Low-rank tensor decomposition and completion have attracted significant interest from academia given the ubiquity of tensor data. However, low-rank structure is a global property, which will not be fulfilled when the data presents complex and weak dependencies given specific graph structures. One particular application that motivates this study is the spatiotemporal data analysis. As shown in the preliminary study, weakly dependencies can worsen the low-rank tensor completion performance. In this paper, we propose a novel low-rank CANDECOMP / PARAFAC (CP) tensor decomposition and completion framework by introducing the L1-norm penalty and Graph Laplacian penalty to model the weakly dependency on graph. We further propose an efficient optimization algorithm based on the Block Coordinate Descent for efficient estimation. A case study based on the metro passenger flow data in Hong Kong is conducted to demonstrate an improved performance over the regular tensor completion methods.</p>
+</blockquote>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://doi.org/10.1609/aaai.v34i01.5444">OMuLeT: Online Multi-Lead Time Location Prediction for Hurricane Trajectory Forecasting</a></p>
+<p><strong>ABSTRACT</strong></p>
+<blockquote>
+<p>Hurricanes are powerful tropical cyclones with sustained wind speeds ranging from at least 74 mph (for category 1 storms) to more than 157 mph (for category 5 storms). Accurate prediction of the storm tracks is essential for hurricane preparedness and mitigation of storm impacts. In this paper, we cast the hurricane trajectory forecasting task as an online multi-lead time location prediction problem and present a framework called OMuLeT to improve path prediction by combining the 6-hourly and 12-hourly forecasts generated from an ensemble of dynamical (physical) hurricane models. OMuLeT employs an online learning with restart strategy to incrementally update the weights of the ensemble model combination as new observation data become available. It can also handle the varying dynamical models available for predicting the trajectories of different hurricanes. Experimental results using the Atlantic and Eastern Pacific hurricane data showed that OMuLeT significantly outperforms various baseline methods, including the official forecasts produced by the U.S. National Hurricane Center (NHC), by more than 10% in terms of its 48-hour lead time forecasts.</p>
+</blockquote>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://doi.org/10.1609/aaai.v34i10.7159">Efficient Spatial-Temporal Rebalancing of Shareable Bikes(Student Abstract)</a></p>
+<p><strong>ABSTRACT</strong></p>
+<blockquote>
+<p>Bike sharing systems are popular worldwide now. However, these systems are facing a problem - rebalancing of shareable bikes among different docking stations. To address this challenge, we propose an approach for the spatial-temporal rebalancing of shareable bikes which allows domain experts to optimize the rebalancing operation with their knowledge and preferences without relying on learning by trial-and-error.</p>
+</blockquote>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://doi.org/10.1609/aaai.v34i10.7200">Travel Time Prediction on Un-Monitored Roads: A Spatial Factorization Machine Based Approach(Student Abstract)</a></p>
+<p><strong>ABSTRACT</strong></p>
+<blockquote>
+<p>Real-time traffic monitoring is one of the most important factors for route planning and estimated time of arrival (ETA). Many major roads in large cities are installed with live traffic monitoring systems, inferring the current traffic congestion status and ETAs to other locations. However, there are also many other roads, especially small roads and paths, that are not monitored. Yet, live traffic status on such un-monitored small roads can play a non-negligible role in personalized route planning and re-routing when road incident happens. How to estimate the traffic status on such un-monitored roads is thus a valuable problem to be addressed. In this paper, we propose a model called Spatial Factorization Machines (SFM) to address this problem. A major advantage of the SFM model is that it incorporates physical distances and structures of road networks into the estimation of traffic status on un-monitored roads. Our experiments on real world traffic data demonstrate that the SFM model significantly outperforms other existing models on ETA of un-monitored roads.</p>
+</blockquote>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://doi.org/10.1609/aaai.v34i01.5438">Spatial-Temporal Synchronous Graph Convolutional Networks: A New Framework for Spatial-Temporal Network Data Forecasting</a></p>
+<p><strong>ABSTRACT</strong></p>
+<blockquote>
+<p>Spatial-temporal network data forecasting is of great importance in a huge amount of applications for traffic management and urban planning. However, the underlying complex spatial-temporal correlations and heterogeneities make this problem challenging. Existing methods usually use separate components to capture spatial and temporal correlations and ignore the heterogeneities in spatial-temporal data. In this paper, we propose a novel model, named Spatial-Temporal Synchronous Graph Convolutional Networks (STSGCN), for spatial-temporal network data forecasting. The model is able to effectively capture the complex localized spatial-temporal correlations through an elaborately designed spatial-temporal synchronous modeling mechanism. Meanwhile, multiple modules for different time periods are designed in the model to effectively capture the heterogeneities in localized spatial-temporal graphs. Extensive experiments are conducted on four real-world datasets, which demonstrates that our method achieves the state-of-the-art performance and consistently outperforms other baselines.</p>
+</blockquote>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://doi.org/10.1609/aaai.v34i01.5470">Spatio-Temporal Graph Structure Learning for Traffic Forecasting</a></p>
+<p><strong>ABSTRACT</strong></p>
+<blockquote>
+<p>As an indispensable part in Intelligent Traffic System (ITS), the task of traffic forecasting inherently subjects to the following three challenging aspects. First, traffic data are physically associated with road networks, and thus should be formatted as traffic graphs rather than regular grid-like tensors. Second, traffic data render strong spatial dependence, which implies that the nodes in the traffic graphs usually have complex and dynamic relationships between each other. Third, traffic data demonstrate strong temporal dependence, which is crucial for traffic time series modeling. To address these issues, we propose a novel framework named Structure Learning Convolution (SLC) that enables to extend the traditional convolutional neural network (CNN) to graph domains and learn the graph structure for traffic forecasting. Technically, SLC explicitly models the structure information into the convolutional operation. Under this framework, various non-Euclidean CNN methods can be considered as particular instances of our formulation, yielding a flexible mechanism for learning on the graph. Along this technical line, two SLC modules are proposed to capture the global and local structures respectively and they are integrated to construct an end-to-end network for traffic forecasting. Additionally, in this process, Pseudo three Dimensional convolution (P3D) networks are combined with SLC to capture the temporal dependencies in traffic data. Extensively comparative experiments on six real-world datasets demonstrate our proposed approach significantly outperforms the state-of-the-art ones.</p>
+</blockquote>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
